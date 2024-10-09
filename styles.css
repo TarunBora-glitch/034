@@ -25,9 +25,9 @@ header {
 }
 
 .profile-photo {
-  width:300px; 
-  height:auto; 
-  max-width: 100px;
+  width:100%; 
+  height:600px; 
+  max-width: 350px;
   aspect-ratio: 3/4;
   border-radius: 10px;
   object-fit: cover;
@@ -123,9 +123,6 @@ section {
 }
 
 .btn:hover {
-  .btn:hover {
-    background-color: #feb47b; 
-    color: #fff; 
   background: linear-gradient(45deg, #325402, #004a07);
   transform: translateY(-2px);
 }
@@ -203,8 +200,8 @@ input[type="email"]:focus {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color:#1c92d2; 
-  color: white;
+  background-color:#abb4ac; 
+  color: rgb(0, 0, 0);
   font-size: 24px;
   width: 50px;
   height: 50px;
@@ -212,7 +209,7 @@ input[type="email"]:focus {
   align-items: center; 
   justify-content: center; 
   line-height: 50px;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 50%;
   text-align: center;
   text-decoration: none;
@@ -259,10 +256,7 @@ footer .social-links a:hover {
   }
 }
 
-@media (max-width: 600px) {
-    .container {
-    width: 95%; 
-  }
+@media (max-width: 1200px) {
   header h1 {
     font-size: 2em; 
   }
@@ -281,31 +275,26 @@ footer .social-links a:hover {
 
   #skills ul li {
     font-size: 1em; 
-    
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px){ 
   .profile-photo {
-    width: 150px;
+    max-width: 120px;
+    height: auto; 
   }
 }
-@media (max-width: 769px) and (max-width: 1200px) {
+@media (max-width: 480px) {
   .profile-photo {
-    width: 250px; 
+    max-width: 100px; 
   }
 }
-@media (min-width: 1200px) { 
-  .profile-photo {
-    width: 300px; 
-  }
-}
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .container {
     width: 95%; 
   }
 
   header h1 {
-    font-size: 2em; 
+    font-size: 1.8em; 
   }
 
   nav ul {
@@ -332,11 +321,10 @@ footer .social-links a:hover {
   nav ul {
       flex-direction: column; 
       align-items: center; 
-    padding-inline-start: 0;
   }
 
   nav ul li {
-      margin: 10px 0; 
+      margin: 0.5em 0; 
   }
 }
 
@@ -348,3 +336,5 @@ footer .social-links a:hover {
       padding: 0.5em 1em; 
   }
 }
+
+
