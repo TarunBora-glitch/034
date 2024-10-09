@@ -259,11 +259,6 @@ footer .social-links a:hover {
   header h1 {
     font-size: 2em; 
   }
-
-  nav ul li {
-    font-size: 1em; 
-  }
-
   .project {
     padding: 1.5em;
   }
@@ -278,7 +273,7 @@ footer .social-links a:hover {
 }
 @media (max-width: 768px){ 
   .profile-photo {
-    max-width: 120px;
+    max-width: 95px;
     height: auto; 
   }
 }
@@ -336,5 +331,11 @@ footer .social-links a:hover {
       padding: 0.5em 1em; 
   }
 }
-
+@media (max-width: 768px) {   /* Adjust styles for mobile screens */
+  nav ul {
+    padding-inline-start: 0;   /* Optional: Adjust padding for mobile */
+    padding-inline-end: 0;     /* Optional: Adjust padding for mobile */
+    justify-content: space-around; /* Distribute space evenly */
+  }
+}
 
