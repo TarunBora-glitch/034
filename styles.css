@@ -364,9 +364,10 @@ footer .social-links a:hover {
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
+    gap:1px;
   }
   nav ul li {
-    font-size: 0.6em; /* Smaller font size */
+    font-size: 10px; /* Smaller font size */
   }
   nav ul li a {
     padding: 5px 6px; /* Smaller padding for mobile */
