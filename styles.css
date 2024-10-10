@@ -350,4 +350,13 @@ footer .social-links a:hover {
     padding: 0.4em 0.8em;
     font-size: 0.85em;
   }
+   footer {
+    padding: 10px; 
+    font-size: 0.8em; 
+  }
+
+  footer .social-links a {
+    font-size: 1.2em; 
+    margin: 0 0.5em; 
+  }
 }
