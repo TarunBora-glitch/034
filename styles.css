@@ -320,7 +320,7 @@ footer .social-links a:hover {
 
 @media (max-width: 768px) {
   nav ul {
-      flex-direction: row; 
+      flex-direction: Column ; 
       align-items: center; 
   }
 
