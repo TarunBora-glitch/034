@@ -286,11 +286,7 @@ footer .social-links a:hover {
   .btn {
     padding: 0.5em 1em;
   }
-  footer {
-    padding: 5px 10px; 
-    font-size: 0.8em; 
-    
-  }
+  
 }
 
 
@@ -372,6 +368,6 @@ footer .social-links a:hover {
 
   footer .social-links a {
     font-size: 0.6em; 
-    margin: 0 0.2em; 
+    margin: 0 1.5em; 
   }
 }
