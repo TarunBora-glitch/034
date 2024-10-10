@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
@@ -10,23 +10,26 @@ body {
   line-height: 1.6;
   transition: all 0.3s ease-in-out;
 }
+
 .container {
-  width: 90%; 
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
 }
 
+/* Header */
 header {
   background: linear-gradient(to top, #1c92d2, #fef7f2);
   text-align: center;
   padding: 2em 0;
 }
 
+/* Profile photo */
 .profile-photo {
-  width:100%; 
-  height:500px; 
+  width: 100%;
+  height: auto;
   max-width: 300px;
   aspect-ratio: 3/4;
   border-radius: 10px;
@@ -41,6 +44,7 @@ header {
   box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.6);
 }
 
+/* Header title */
 header h1 {
   font-size: 2.5em;
   background: -webkit-linear-gradient(#000000, #8f7e7e);
@@ -53,17 +57,19 @@ header h1:hover {
   transform: scale(1.1);
 }
 
+/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   padding-inline-start: 40px;
   padding-inline-end: 40px;
 }
+
 nav ul li {
-  display: inline; 
+  display: inline;
   margin: 0 1em;
   font-size: 1.2em;
 }
@@ -72,16 +78,16 @@ nav ul li a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 10px 20px;
-  
   background: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   transition: background-color 0.1s ease;
 }
 
 nav ul li a:hover {
-  background-color:rgb(183, 183, 183) ;
+  background-color: rgb(183, 183, 183);
 }
 
+/* Hero section */
 .hero {
   background: linear-gradient(to bottom right, #36d1dc, #5b86e5);
   color: rgb(0, 0, 0);
@@ -95,6 +101,7 @@ section {
   margin: 2em 0;
 }
 
+/* Projects */
 .project {
   background: white;
   padding: 2em;
@@ -109,6 +116,8 @@ section {
   transform: scale(1.05);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
+
+/* Buttons */
 .btn {
   display: inline-block;
   padding: 0.75em 1.5em;
@@ -128,6 +137,7 @@ section {
   transform: translateY(-2px);
 }
 
+/* Skills */
 #skills ul li {
   list-style: none;
   display: inline-block;
@@ -144,16 +154,17 @@ section {
   transform: rotate(5deg) scale(1.1);
 }
 
+/* Certificates */
 .certificates {
   background: rgb(21, 142, 79);
   padding: 1em;
-  margin: 1em; 
+  margin: 1em;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   transform: scale(1);
   transition: all 0.3s ease;
-  width: calc(100% - 40px); 
-  max-width: 420px; 
+  width: calc(100% - 40px);
+  max-width: 420px;
 }
 
 .certificates:hover {
@@ -161,6 +172,7 @@ section {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
 
+/* Form */
 form {
   background: rgba(255, 255, 255, 0.8);
   padding: 2em;
@@ -186,29 +198,29 @@ textarea {
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 16px;
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
   transition: border-color 0.2s ease;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus {
-  border-color:none;
-  outline:none;
-  
+  border-color: none;
+  outline: none;
 }
 
+/* Go to Top Button */
 .go-top {
-  position:fixed;
+  position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color:#abb4ac; 
+  background-color: #abb4ac;
   color: rgb(0, 0, 0);
   font-size: 24px;
   width: 50px;
   height: 50px;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   line-height: 50px;
   padding: 10px 15px;
   border-radius: 50%;
@@ -219,14 +231,15 @@ input[type="email"]:focus {
 }
 
 .go-top:hover {
-  background-color: #eddada; /* Change on hover */
-  transform: translateY(-5px); /* Lift effect on hover */
+  background-color: #eddada;
+  transform: translateY(-5px);
 }
 
 .go-top:focus {
   outline: none;
 }
 
+/* Footer */
 footer {
   background-color: #1f4037;
   background-image: linear-gradient(#232323 0%, #485248 74%);
@@ -247,6 +260,7 @@ footer .social-links a:hover {
   transform: scale(1.2);
 }
 
+/* Fade In Animation */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -256,84 +270,84 @@ footer .social-links a:hover {
   }
 }
 
-@media (max-width: 1200px) {
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
   header h1 {
-    font-size: 2em; 
+    font-size: 2.2em;
   }
 
   nav ul li {
-    font-size: 1em; 
+    font-size: 1.1em;
   }
 
   .project {
-    padding: 1.5em;
+    margin: 1em 0;
   }
 
   .btn {
-    font-size: 1em; 
+    padding: 0.5em 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
   }
 
-  #skills ul li {
-    font-size: 1em; 
-  }
-}
-@media (max-width: 768px){ 
   .profile-photo {
-    max-width: 95px;
-    height: auto; 
-  }
-}
-@media (max-width: 480px) {
-  .profile-photo {
-    max-width: 120px; 
+    max-width: 200px;
     height: auto;
   }
-}
-@media (max-width: 1200px) {
-  .container {
-    width: 95%; 
-  }
-
-  header h1 {
-    font-size: 1.8em; 
-  }
 
   nav ul {
-    flex-direction: column; 
-    gap: 10px; 
+    padding: 0;
   }
 
-  .project, .certificates {
-    width: 100%; 
-  }
-
-  footer .social-links a {
-    font-size: 1.2em;
-  }
-}
-
-@media (max-width: 600px) {
-  .certificates {
-    width: calc(100% - 20px); 
-  }
-}
-
-@media (max-width: 768px) {
-  nav ul {
-      flex-direction: Column ; 
-      align-items: center; 
-  }
-
-  nav ul li {
-      margin: 0.5em 0; 
-  }
-}
-
-@media (max-width: 600px) {
-  form {
-      padding: 1.5em; 
-  }
   .btn {
-      padding: 0.5em 1em; 
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
+
+  .project {
+    padding: 1em;
+  }
+
+  .certificates {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .profile-photo {
+    max-width: 150px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .hero {
+    font-size: 1em;
+  }
+
+  .project {
+    margin: 1em 0;
+  }
+
+  .certificates {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .btn {
+    padding: 0.4em 0.8em;
+    font-size: 0.85em;
   }
 }
