@@ -263,9 +263,6 @@ footer .social-links a:hover {
   100% {
     opacity: 1;
   }
-  nav ul li a {
-    padding: 10px 20px; /* Smaller padding for mobile */
-  }
 }
 
 /* Media Queries for Responsiveness */
@@ -284,6 +281,9 @@ footer .social-links a:hover {
 
   .btn {
     padding: 0.5em 1em;
+  }
+  nav ul li a {
+    padding: 10px 20px; /* Smaller padding for mobile */
   }
 }
 
@@ -322,9 +322,10 @@ footer .social-links a:hover {
   }
 
   nav ul li {
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
-   nav ul li a {
+  nav ul li a {
     padding: 5px 10px; /* Smaller padding for mobile */
+    font-size: 0.5em;
 }
 }
