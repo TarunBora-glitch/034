@@ -287,7 +287,8 @@ footer .social-links a:hover {
     padding: 0.5em 1em;
   }
     nav ul {
-    gap: 10px; /* Adjusted gap for tablets/laptops */
+    gap: 10px;
+    position: fixed;
   }  
 }
 
@@ -334,15 +335,12 @@ footer .social-links a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 1.5px;
+    padding: 2px;
     gap:2px;
     flex-wrap: nowrap;
   }
    nav ul li {
     font-size: 0.8em;
-  }
-  nav ul li a {
-    padding: 1px 2px; 
   }
 
   .hero {
@@ -362,12 +360,4 @@ footer .social-links a:hover {
     padding: 0.4em 0.8em;
     font-size: 0.85em;
   }
-   footer {
-    font-size: 0.9em; 
-  }
 
-  footer .social-links a {
-    font-size: 0.9em; 
-    margin: 0 1.5em; 
-  }
-}
