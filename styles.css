@@ -379,16 +379,16 @@ footer .social-links a:hover {
     font-size: 0.85em;
   }
   footer {
-    padding: 1em 0; /* Reduce vertical padding */
+    padding: 0.5em 0; /* Reduce vertical padding */
   }
    footer p {
     font-size: 0.8em; /* Reduce font size for smartphones */
-    margin-bottom: 0.5em; 
+    margin-bottom: 0.2em; 
   }
 
   footer .social-links a {
     font-size: 0.8em; /* Adjust font size for social links */
     display: block; /* Stack links vertically */
-    margin: 0.3em 0; /* Vertical spacing for stacked links */
+    margin: 0.1em 0; /* Vertical spacing for stacked links */
   }
 }
