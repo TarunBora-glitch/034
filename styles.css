@@ -368,12 +368,11 @@ footer .social-links a:hover {
     flex-wrap: nowrap;
   }
   nav ul li {
-    font-size: 0.8em; /* Smaller font size */
+    font-size: 1em; /* Smaller font size */
   }
   nav ul li a {
     padding: 5px 10px; /* Smaller padding for mobile */
   }
-
 
   .hero {
     font-size: 1em;
@@ -397,10 +396,10 @@ footer .social-links a:hover {
   }
    footer p {
     font-size: 0.8em; /* Reduce font size for smartphones */
-    margin-bottom: 0.2em; 
+    margin-bottom: 0.1em; 
   }
   footer .social-links {
-    margin-top: 0.5em; /* Reduce margin between copyright and links */
+    margin-top: 0.2em; /* Reduce margin between copyright and links */
   }
 
   footer .social-links a {
