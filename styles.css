@@ -62,7 +62,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
   padding-inline-start: 40px;
   padding-inline-end: 40px;
@@ -364,7 +364,7 @@ footer .social-links a:hover {
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
-    gap:1px;
+    gap:0.1px;
   }
   nav ul li {
     font-size: 10px; /* Smaller font size */
