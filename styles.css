@@ -331,6 +331,10 @@ footer .social-links a:hover {
     align-items: center;
     padding: 0;
   }
+   nav ul li {
+    font-size: 1.1em;
+     padding:2px;
+  }
 
   .hero {
     font-size: 1em;
@@ -351,7 +355,7 @@ footer .social-links a:hover {
   }
    footer {
     padding: 5px 10px; 
-    font-size: 0.4em; 
+    font-size: 0.8em; 
     
   }
 
