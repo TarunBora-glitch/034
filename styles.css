@@ -61,9 +61,10 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap; /* Allow wrapping */
+  gap: 5px;
+  flex-wrap: wrap;
   padding-inline-start: 0;
+  padding-inline-end: 0;
 }
 
 nav ul li {
@@ -106,6 +107,7 @@ section {
   margin-bottom: 1.5em;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1);
   transition: all 0.3s ease;
 }
 
@@ -122,6 +124,7 @@ section {
   color: #fff;
   border: none;
   text-decoration: none;
+  padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
@@ -157,6 +160,7 @@ section {
   margin: 1em;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1);
   transition: all 0.3s ease;
   width: calc(100% - 40px);
   max-width: 420px;
@@ -199,7 +203,7 @@ textarea {
 
 input[type="text"]:focus,
 input[type="email"]:focus {
-  border-color: #888; /* Change border color on focus */
+  border-color: none;
   outline: none;
 }
 
@@ -282,10 +286,12 @@ footer .social-links a:hover {
   .btn {
     padding: 0.5em 1em;
   }
-  nav ul li a {
-    padding: 10px 20px; /* Smaller padding for mobile */
-  }
+    nav ul {
+    gap: 10px;
+    position: fixed;
+  }  
 }
+
 
 @media screen and (max-width: 768px) {
   header h1 {
@@ -295,6 +301,10 @@ footer .social-links a:hover {
   .profile-photo {
     max-width: 200px;
     height: auto;
+  }
+
+  nav ul {
+    padding: 0;
   }
 
   .btn {
@@ -321,11 +331,34 @@ footer .social-links a:hover {
     max-width: 150px;
   }
 
-  nav ul li {
-    font-size: 0.5em;
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2px;
+    gap:2px;
+    flex-wrap: nowrap;
   }
-  nav ul li a {
-    padding: 5px 10px; /* Smaller padding for mobile */
-    font-size: 0.5em;
-}
+   nav ul li {
+    font-size: 0.8em;
+  }
+
+  .hero {
+    font-size: 1em;
+  }
+
+  .project {
+    margin: 1em 0;
+  }
+
+  .certificates {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .btn {
+    padding: 0.4em 0.8em;
+    font-size: 0.85em;
+  }
+
 }
